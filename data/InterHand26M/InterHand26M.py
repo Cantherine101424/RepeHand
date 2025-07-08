@@ -347,7 +347,6 @@ class InterHand26M(torch.utils.data.Dataset):
             'pa_mpjpe_ih': [[None for _ in range(self.joint_set['joint_num'])] for _ in range(sample_num)],
             'pa_mpvpe_sh': [None for _ in range(sample_num)],
             'pa_mpvpe_ih': [None for _ in range(sample_num)],
-            # 新增F@5和F@15指标
             'f5_sh': [[None for _ in range(self.joint_set['joint_num'])] for _ in range(sample_num)],
             'f5_ih': [[None for _ in range(self.joint_set['joint_num'])] for _ in range(sample_num)],
             'f15_sh': [[None for _ in range(self.joint_set['joint_num'])] for _ in range(sample_num)],
@@ -493,7 +492,6 @@ class InterHand26M(torch.utils.data.Dataset):
                     tot_eval_result['mpjpe_ih'][j].append(mpjpe_ih[j])
         tot_eval_result['mpjpe_ih'] = [np.mean(result) for result in tot_eval_result['mpjpe_ih']]
 
-        # F@5  F@15
         for f5_sh in eval_result['f5_sh']:
             for j in range(self.joint_set['joint_num']):
                 if f5_sh[j] is not None:
