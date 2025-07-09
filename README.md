@@ -30,7 +30,9 @@ cd RepeHand/main
 
 - Install dependencies. (Python 3.8 + NVIDIA GPU + CUDA. Recommend to use Anaconda)
 
-- Prepare the training and testing dataset. (https://mks0601.github.io/InterHand2.6M/)
+- Download InterHand2.6M [[HOMEPAGE](https://mks0601.github.io/InterHand2.6M/)]. `images` contains images in 5 fps, and `annotations` contains the `H+M` subset.
+
+- Download HIC [[HOMEPAGE](https://files.is.tue.mpg.de/dtzionas/Hand-Object-Capture/)] [[annotations](https://drive.google.com/file/d/1oqquzJ7DY728M8zQoCYvvuZEBh8L8zkQ/view?usp=share_link)]. You need to download 1) all `Hand-Hand Interaction` sequences (`01.zip`-`14.zip`) and 2) some of `Hand-Object Interaction` seuqneces (`15.zip`-`21.zip`) and 3) MANO fits.
 
 #### Training
 If you prefer not to train the model, you can simply obtain the pretrained model based different TinyViT backbones by downloading it from this link:
