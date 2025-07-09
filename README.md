@@ -2,7 +2,7 @@
 
 ## This repository is an official implementation of the paper  "RepeHand: Lightweight 3D Two-Hand Reconstruction with Perception Enhancement
 from Monocular Image".
-
+![](fig01.png)
 ### Abstract
 Reconstructing two interacting hands from a monocular image on resource-limited
 platforms presents significant challenges when balancing reconstruction performance
